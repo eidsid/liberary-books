@@ -28,30 +28,71 @@
     <!--main area-->
     <div class="main ">
         <!--book info-->
-        <div class="bookinfo">
+        <div class="bookinfo" id="book_info">
             <div class="info container">
                 <h1>book info</h1>
-                <form>
+                <form id="bookinfo">
                     <div class="input-group">
-                        <label for="name">Name</label> <input class="form-control" type="text" id="name">
+                        <label for="name">Name</label> <input class="form-control" type="text" id="book-name">
                     </div>
 
                     <div class="input-group">
-                        <label for="pagecount">Pages</label> <input class="form-control" type="text" id="pagecount">
+                        <label for="pagecount">Pages</label> <input class="form-control" type="text" id="book-pagecount">
                     </div>
                     <div class="input-group">
-                        <label for="author">author</label> <input class="form-control" type="text" id="author">
+                        <label for="author">author</label> <input class="form-control" type="text" id="book-author">
                     </div>
 
                     <div class="buttons">
                         <button type="submit">Submit</button>
-                        <button class="cancel">Cancel</button>
+                        <button type="button" class="cancel" id="cancel">Cancel</button>
                     </div>
                 </form>
             </div>
         </div>
         <!--book info !-->
+        <!--book edit-->
+        <div class="bookinfo" id="book_edit">
+            <div class="info container">
+                <h1>book</h1>
+                <form id="bookinfo">
+                    <div class="input-group">
+                        <label for="name">Name</label> <input class="form-control" type="text" id="eidtbook-name">
+                    </div>
 
+                    <div class="input-group">
+                        <label for="pagecount">Pages</label> <input class="form-control" type="text" id="eidtbook-pagecount">
+                    </div>
+                    <div class="input-group">
+                        <label for="author">author</label> <input class="form-control" type="text" id="eidtbook-author">
+                    </div>
+
+                    <div class="buttons">
+                        <button type="submit" class="eidtok">Submit</button>
+                        <button type="button" class="eidtcancel" id="cancel">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--book edit !-->
+
+        <!--delete nification-->
+
+        <div class="delete_nif">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="nif">
+                            <h1>Do you want to delete this book?</h1>
+                            <button class="btn btn-danger ok">Ok</button>
+
+                            <button class="btn btn-primary cancel">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--delete nification!-->
 
 
 
@@ -60,58 +101,25 @@
             <div class="container">
                 <h1 id="title">books</h1>
                 <h2></h2>
-                <h3 class="booknumber">1</h3>
+                <h3 class="booksnumber">1</h3>
 
             </div>
         </div>
         <!--sidebar area !-->
-
         <!--content area-->
         <div class="content">
             <div class="container">
-                <div class="row">
-                    <!--book-->
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="book">
-                            <h1 class="bookname">Name</h1>
-                            <h1 class="pages">Pages </h1>
-                            <h1 class="bookauthor">author</h1>
-                            <div class="buttons">
-                                <button type="submit">Edit</button>
-                                <button class="cancel">Delete</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!--book!-->
-                    <!--book-->
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="book">
-                            <h1 class="bookname">Name</h1>
-                            <h1 class="pages">Pages </h1>
-                            <h1 class="bookauthor">author</h1>
-                            <div class="buttons">
-                                <button type="submit">Edit</button>
-                                <button class="cancel">Delete</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!--book!-->
-                    <!--book-->
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="book">
-                            <h1 class="bookname">Name</h1>
-                            <h1 class="pages">Pages </h1>
-                            <h1 class="bookauthor">author</h1>
-                            <div class="buttons">
-                                <button type="submit">Edit</button>
-                                <button class="cancel">Delete</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!--book!-->
+                <div class="row" id="bookcontainer">
 
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="addbookparent">
+                    <!--books well be here-->
+
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <!--add button-->
+                    <div class="col-lg-6 col-md-6 col-sm-12" id="btn-addbook">
+                        <div class="btn addbookparent">
                             <div class="add-book">
                                 <div class="card">
                                     <div class="card-body">
@@ -121,14 +129,19 @@
                             </div>
                         </div>
                     </div>
+                    <!--add button!-->
+
                 </div>
             </div>
         </div>
         <!--content area !-->
 
+
+    </div>
+
     </div>
     <!--main area !-->
-
+    <div id="booktester">
 
 </body>
 <!--jquery-->
